@@ -11,11 +11,9 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #222 !important;
+    background: #282828;
 }
 #footer h5{
-	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#ffffff;
@@ -54,8 +52,6 @@ section .section-title {
 	transition: .5s all ease;
 }
 #footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
 	font-weight:700;
 }
 #footer ul.quick-links li a i{
@@ -81,12 +77,17 @@ html,body {
 }
 
 .hero {
-    background: rgb(180,82,58);
-    background: linear-gradient(90deg, rgba(180,82,58,1) 0%, rgba(253,29,29,1) 35%, rgba(252,145,69,1) 84%);
+    background: rgb(232,76,61);
+    background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 60%, rgba(253,29,29,1) 100%);
     padding: 24px 0;
     color: #eee;
 }
   
+.mainNav {
+    background: rgb(232,76,61);
+    background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 60%, rgba(253,29,29,1) 100%);
+}
+
 h1,h2 {
     font-weight: 200;
     margin: 0.4em 0;
