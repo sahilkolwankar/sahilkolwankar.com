@@ -76,13 +76,55 @@ html,body {
     font-size: 18px;
 }
 
+.navbar-light .navbar-brand {
+    color: #f2f2f2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f2f2f2;
+}
+
 .hero {
     background: rgb(232,76,61);
     background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 60%, rgba(253,29,29,1) 100%);
-    padding: 24px 0;
+    padding: 36px 0;
     color: #eee;
 }
-  
+
+.hero .greeting {
+    margin: 36px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.hero .links {
+    width: 1024px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin: 0 auto;
+}
+
+.hero .links .col {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .links .col p {
+    text-align: center;
+}
+
+#footer h5 {
+    text-align: center;
+}
+
+#footer .quick-links li {
+    text-align: center;
+}
+
+#footer .quick-links li a {
+    margin-left: auto;
+    margin-right: auto;
+}
 .mainNav {
     background: rgb(232,76,61);
     background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 60%, rgba(253,29,29,1) 100%);
