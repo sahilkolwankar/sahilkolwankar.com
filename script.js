@@ -1,3 +1,12 @@
+$(document).ready(function(){
+  $('.slider-inner').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+  });
+});
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
