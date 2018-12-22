@@ -98,10 +98,10 @@ html,body {
 }
 
 .hero .links {
-    width: 1024px;
+    width: 600px;
     padding-top: 36px;
     padding-bottom: 36px;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
 }
 
 .hero .links .col {
@@ -109,8 +109,64 @@ html,body {
     margin-right: auto;
 }
 
-.hero .links .col p {
+.hero .links .col .linksImg {
+    margin-bottom: 20px;
+}
+
+.hero .links .col .linksImg svg{
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    fill: #f2f2f2;
+    color: #f2f2f2;
+}
+
+.hero .links .col .linksText p{
     text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    /* box-shadow: inset 0px 7px 10px #999; */
+    /* background-color: #aaa; */
+    /* background: rgb(232,76,61);
+    background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 60%, rgba(253,29,29,1) 100%); */
+    background: 
+    radial-gradient(rgba(0,0,0,.3) 3px, transparent 4px),
+    radial-gradient(rgba(0,0,0,.3) 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    padding: 20px 0 40px 0;
+    box-shadow: inset 0px 4px 16px #999;
+}
+
+.slider .workWith {
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f2f2f2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider .slider-inner button {
+    display: none !important;
+}
+
+.slider .slider-inner .col img {
+    fill: #fff;
+}
+
+#footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 #footer h5 {
@@ -124,6 +180,7 @@ html,body {
 #footer .quick-links li a {
     margin-left: auto;
     margin-right: auto;
+    font-weight: 300;
 }
 .mainNav {
     background: rgb(232,76,61);
@@ -142,6 +199,11 @@ h1 {
 h2 {
     color: #ddd;
     font-size: 2em;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Slick Slider styles */
