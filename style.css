@@ -1,5 +1,7 @@
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
 section {
     padding: 60px 0;
 }
@@ -129,6 +131,46 @@ html,body {
     margin-right: auto;
 }
 
+.toolsAndServices {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0;
+    background: #292929;
+    box-shadow: 0px 4px 4px #393939;
+    color: #f9f9f9;
+}
+
+.toolsAndServices .titleRow {
+    margin: 0 0 20px 0;
+}
+
+.toolsAndServices .titleRow p{
+    width: fit-content;
+    margin: 10px auto 24px auto;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 30px;
+    /* background: #F4312A; */
+    background: #00BF8F;
+    box-shadow: 0px 1px 1px #343434;
+}
+
+.toolsAndServices .list {
+    width: 60%;
+    min-width: 800px;
+    margin: 16px auto;
+}
+
+.toolsAndServices .list p {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .toolsAndServices .list svg {
+    width: 100%;
+} */
+
 .slider {
     /* box-shadow: inset 0px 7px 10px #999; */
     /* background-color: #aaa; */
@@ -149,11 +191,16 @@ html,body {
 
 .slider .workWith {
     width: fit-content;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #f2f2f2;
     margin-left: auto;
     margin-right: auto;
+    padding: 8px 20px;
+    background-color: rgb(232,76,61);
+    box-shadow: 0px 1px 2px #999;
+    border-radius: 30px;
 }
 
 .slider .slider-inner button {
@@ -162,6 +209,58 @@ html,body {
 
 .slider .slider-inner .col img {
     fill: #fff;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience {
+    width: 100%;
+    padding: 0;
+    box-shadow: 0px 4px 4px #999;
+}
+
+.experience .typeA, .experience .typeB {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.experience .typeA .left, .experience .typeB .right {
+    background: rgb(232,76,61);
+    background: linear-gradient(90deg, rgba(232,76,61,1) 0%, rgba(231,75,60,1) 100%);
+    padding: 30px 20px;
+    color: #f2f2f2;
+}
+
+.experience .typeA .right, .experience .typeB .left {
+    /* background: #00BF8F; */
+    background: #292929;
+    padding: 30px 20px;
+    color: #f2f2f2;
+}
+
+.experience .typeA .right {
+    padding: 30px 30px 30px 60px;
+}
+
+.experience .titleRow, .experience .listRow, .experience .descRow {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.experience .typeA .left img, .experience .typeB .right img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience .col .titleRow {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 #footer {
