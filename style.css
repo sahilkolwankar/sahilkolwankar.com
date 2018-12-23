@@ -115,6 +115,11 @@ html,body {
     margin-bottom: 20px;
 }
 
+.hero .links .col .linksImg a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero .links .col .linksImg svg{
     width: 60px;
     height: 60px;
