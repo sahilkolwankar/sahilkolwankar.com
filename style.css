@@ -192,6 +192,7 @@ html,body {
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     padding: 20px 0 40px 0;
     box-shadow: inset 0px 4px 16px #999;
+    overflow: hidden;
 }
 
 .slider .workWith {
@@ -222,9 +223,118 @@ html,body {
 .experience {
     width: 100%;
     padding: 0;
-    box-shadow: 0px 4px 4px #999;
+    -webkit-box-shadow: 4px -4px 31px -6px rgba(0,0,0,0.63);
+    -moz-box-shadow: 4px -4px 31px -6px rgba(0,0,0,0.63);
+    box-shadow: 4px -4px 31px -6px rgba(0,0,0,0.63);
+    background: #4e32ff; /* Old browsers */
+    background: -moz-linear-gradient(left, #4e32ff 0%, #2989d8 0%, #a728fc 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #4e32ff 0%,#2989d8 0%,#a728fc 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #4e32ff 0%,#2989d8 0%,#a728fc 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e32ff', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 }
 
+.experienceTitle {
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.experienceMore {
+    padding: 28px 0 0 0;
+    margin: 0;
+}
+
+.experienceTitle p, .experienceMore p {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #f2f2f2;
+}
+
+.experienceTitle p {
+    border: 1px solid #f2f2f2;
+    padding: 8px 12px;
+}
+
+.experienceMore p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.experienceMore p a {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    padding: 4px 12px;
+    border-radius: 30px;
+    color: #4232ff;
+    transition: border .4s ease, background-color .4s ease, color .4s ease;
+    margin-left: 6px;
+}
+
+.experienceMore p a:hover {
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+}
+
+.experienceRow {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    color: #f2f2f2;
+}
+
+.experienceRow .col {
+    padding: 40px;
+}
+
+.experienceRow .imageRow {
+    margin: 0 auto 20px auto;
+}
+
+.experienceRow .imageRow img {
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.experienceRow .imageRow.right img {
+    height: 44px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.experienceRow .textRow {
+    margin: 0 auto;
+}
+
+.experienceRow .workedWith {
+    margin-top: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.experienceRow .textRow h5, .experienceRow .textRow h6, .experienceRow .textRow h7 {
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.experienceRow .textRow p {
+    margin: 0 auto 4px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.experienceRow .textRow p.bold {
+    font-weight: 400;
+}
+
+/* 
 .experience .typeA, .experience .typeB {
     width: 100%;
     margin: 0;
@@ -239,7 +349,7 @@ html,body {
 }
 
 .experience .typeA .right, .experience .typeB .left {
-    /* background: #00BF8F; */
+    background: #00BF8F;
     background: #292929;
     padding: 30px 20px;
     color: #f2f2f2;
@@ -266,7 +376,7 @@ html,body {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 24px;
-}
+} */
 
 #footer {
     font-family: 'Roboto', sans-serif;
