@@ -293,6 +293,7 @@ html,body {
 .experienceMore p {
     font-weight: 400;
     font-size: 20px;
+    text-align: center;
 }
 
 .experienceMore p a {
@@ -345,6 +346,7 @@ html,body {
 
 .experienceRow .textRow {
     margin: 0 auto;
+    text-align: center;
 }
 
 .experienceRow .textRow a {
