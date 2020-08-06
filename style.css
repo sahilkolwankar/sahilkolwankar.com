@@ -389,6 +389,23 @@ body {
     width: fit-content;
 }
 
+.experienceRow .textRow .longJobTitle {
+    display: inline;
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 40px 40px;
+}
+
+.experienceRow .textRow .longJobTitle h5 {
+    display: inline;
+}
+
+.experienceRow .tempusLogo img {
+    width: 20%;
+    height: 20%;
+}
+
 .experienceRow .textRow p {
     margin: 0 auto 4px 0;
     width: 100%;
