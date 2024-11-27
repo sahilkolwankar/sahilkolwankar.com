@@ -401,7 +401,7 @@ body {
     display: inline;
 }
 
-.experienceRow .tempusLogo img {
+.experienceRow .tempusLogo img, .experienceRow .viziblyLogo img {
     width: 20%;
     height: 20%;
 }
