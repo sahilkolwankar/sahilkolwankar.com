@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@import '@fontsource/dm-serif-display/400.css';
+@import '@fontsource/dm-serif-display/400-italic.css';
+@import '@fontsource/dm-serif-text/400.css';
+@import '@fontsource/dm-serif-text/400-italic.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@plugin '@tailwindcss/typography';
+
+/* scripts/build-blog.mjs hand-writes utility classes outside of src/ to render
+   static blog pages after `vite build` runs - without this, Tailwind's content
+   scanner would never see those classes and wouldn't generate the CSS for them. */
+@source '../scripts/build-blog.mjs';
+
+@theme {
+  --font-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  /* DM Serif Display's strokes are calibrated for large hero-size text; used any
+     smaller (in-article subheadings) it reads as too heavy. This is the sibling
+     family, weight-tuned for exactly that smaller, in-context use. */
+  --font-heading-sm: 'DM Serif Text', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter Variable', system-ui, sans-serif;
+  --font-article: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', monospace;
+
+  --color-paper: #fdfcfa;
+  --color-ink: #111110;
+  --color-ink-soft: #5c584f;
+  --color-ink-faint: #938f85;
+  --color-rule: #dfdad0;
+  --color-accent: #a8341f;
+  --color-accent-soft: #f4e8e2;
+  --color-highlight: #ffc83d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.type-cursor {
+  animation: caret-blink 1s step-end infinite;
+}
+
