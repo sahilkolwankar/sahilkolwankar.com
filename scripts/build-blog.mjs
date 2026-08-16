@@ -90,6 +90,7 @@ function readEligiblePosts() {
       publishDate: data.publishDate,
       summary: data.summary ?? '',
       tags: data.tags ?? [],
+      coverImage: data.coverImage ?? null,
       body: content,
     })
   }
@@ -119,8 +120,9 @@ async function renderMarkdown(md) {
   return String(file)
 }
 
-function layout({ title, description, path, bodyHtml, cssHref }) {
+function layout({ title, description, path, bodyHtml, cssHref, image }) {
   const canonical = `${SITE_URL}${path}`
+  const imageUrl = image ? `${SITE_URL}${image}` : null
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -135,7 +137,9 @@ function layout({ title, description, path, bodyHtml, cssHref }) {
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${canonical}" />
-    <meta name="twitter:card" content="summary" />
+    ${imageUrl ? `<meta property="og:image" content="${imageUrl}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />` : ''}
+    <meta name="twitter:card" content="${imageUrl ? 'summary_large_image' : 'summary'}" />
+    ${imageUrl ? `<meta name="twitter:image" content="${imageUrl}" />` : ''}
     ${cssHref ? `<link rel="stylesheet" href="${cssHref}" />` : ''}
   </head>
   <body class="bg-paper text-ink font-body">
@@ -305,6 +309,7 @@ function renderPostPage(post, cssHref) {
     description: post.summary || SITE_DESCRIPTION,
     path: `/blog/${post.slug}/`,
     bodyHtml: body,
+    image: post.coverImage,
     cssHref,
   })
 }

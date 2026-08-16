@@ -4,6 +4,7 @@ slug: ai-input-not-output
 publishDate: "2026-07-22"
 summary: "AI should be the input to your thinking, never the output - and what that means for how you write, review, and ship code."
 tags: ["engineering", "ai", "leadership"]
+coverImage: /blog-images/ai-input-not-output/og-cover.png
 ---
 
 If the contents of this post seem obvious to you, then you're already on the right track. Most of what follows isn't news - it's a description of judgment good engineers already exercise, just with sharper stakes now that generating code is nearly free.
