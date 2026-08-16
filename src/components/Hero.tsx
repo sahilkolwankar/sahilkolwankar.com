@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import { Mail } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from './BrandIcons'
+import { InstagramIcon, LinkedinIcon, XIcon } from './BrandIcons'
 import { useTypewriter } from '../hooks/useTypewriter'
 import { links, greetings, greetingHolds, greetingDeletes, greetingTypes, location } from '../data/links'
 
@@ -63,29 +63,40 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center gap-3"
         >
           <a
+            href="/blog/"
+            className="border border-ink px-5 py-2.5 font-body text-sm font-semibold transition-colors hover:bg-ink hover:text-paper"
+          >
+            Read My Blog
+          </a>
+          <a
             href={links.resume}
             target="_blank"
             rel="noreferrer"
-            className="border border-ink px-5 py-2.5 font-body text-sm font-semibold transition-colors hover:bg-ink hover:text-paper"
+            className="border border-rule px-5 py-2.5 font-body text-sm font-semibold text-ink-soft transition-colors hover:border-ink hover:text-ink"
           >
             View Resume
           </a>
-          <a
-            href={`mailto:${links.email}`}
-            className="flex items-center gap-2 border border-rule px-5 py-2.5 font-body text-sm font-semibold text-ink-soft transition-colors hover:border-ink hover:text-ink"
-          >
-            <Mail size={16} /> Say hi
-          </a>
           <div className="ml-1 flex items-center gap-4">
             <a
-              href={links.github}
+              href={links.twitter}
               target="_blank"
               rel="noreferrer"
-              aria-label="GitHub"
+              aria-label="Twitter / X"
               className="text-ink-soft transition-colors hover:text-ink"
             >
-              <GithubIcon size={20} />
+              <XIcon size={20} />
             </a>
+            <a
+              href={links.instagram}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="text-ink-soft transition-colors hover:text-ink"
+            >
+              <InstagramIcon size={20} />
+            </a>
+            {/* GitHub icon temporarily hidden here - re-import GithubIcon from './BrandIcons' and restore
+                `<a href={links.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-ink-soft transition-colors hover:text-ink"><GithubIcon size={20} /></a>` above LinkedIn to bring it back. */}
             <a
               href={links.linkedIn}
               target="_blank"
@@ -94,6 +105,9 @@ export function Hero() {
               className="text-ink-soft transition-colors hover:text-ink"
             >
               <LinkedinIcon size={20} />
+            </a>
+            <a href={`mailto:${links.email}`} aria-label="Email" className="text-ink-soft transition-colors hover:text-ink">
+              <Mail size={20} />
             </a>
           </div>
         </motion.div>
